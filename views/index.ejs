@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+
+    <link rel="stylesheet" href="/stylesheets/base/padrao.css">
+
+    <link rel="stylesheet" href="/stylesheets/index.css">
+
+    <!--Fontes importadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="pagina">
+    <header class="cabecalho container">
+        <h1 class="cabecalho__tituloGuia">Controle Financeiro</h1>
+    </header>
+    <main class="conteudoPrincipal container">        
+        <ul>
+            <li>Lançamentos<a href=""></a></li>
+            <li><a href="">Relatório Mensal</a></li>
+            <li><a href="">Acumulado do ano</a></li>
+        </ul>
+    </main>    
+</body>
 </html>

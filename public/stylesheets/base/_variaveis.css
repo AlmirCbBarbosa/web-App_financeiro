@@ -1,0 +1,10 @@
+:root{
+    /*fonte e seus tamanhos*/
+    --fontePadrao: 'Cormorant Garamond', serif;
+    --fonteTamanhoNormal: 18px;
+    --fonteTamanhoDestqueCabecalho: 48px;
+    
+    /*cores do projeto*/
+    --preto: #464646;
+    --branco: #FFF;
+}

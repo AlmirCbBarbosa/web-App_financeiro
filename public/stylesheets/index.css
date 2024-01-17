@@ -1,0 +1,9 @@
+cabecalho__tituloGuia{
+    font-size: var(--fonteTamanhoDestqueCabecalho);
+    color: var(--branco);
+}
+
+.conteudoPrincipal{
+    background-color: blueviolet;
+}
+

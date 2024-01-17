@@ -1,0 +1,24 @@
+@import url(./_reset.css);
+@import url(./_variaveis.css);
+
+.pagina {
+    background-color: var(--branco);
+    color: var(--branco);
+    font-family: var(--fontePadrao);
+    font-size: var(--fonteTamanhoNormal);
+}
+
+.container{
+    background-color: aqua;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        padding: 0 16px;        
+    }
+}

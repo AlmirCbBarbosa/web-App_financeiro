@@ -1,13 +1,8 @@
 const routes = require('./routes/index.js');
 
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-
-//var indexRouter = require('./routes/index');//tranferido para routes/index.js
-//var usersRouter = require('./routes/users');//tranferido para routes/index.js
+const createError = require('http-errors'); //
+const express = require('express');
+const path = require('path');//
 
 const app = express();
 routes(app);
@@ -16,15 +11,10 @@ routes(app);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(logger('dev'));
-//app.use(express.json()); //esta no routes/index.js
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/', indexRouter); //substituido pelo ./routes/index.js
-//app.use('/users', usersRouter); // será centralizado no ./routes/index.js
 
+//=====middlewares de erros======
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

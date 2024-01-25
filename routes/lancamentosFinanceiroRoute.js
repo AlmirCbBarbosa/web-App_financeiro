@@ -1,10 +1,9 @@
 const {Router} = require('express');
-//const LancamentosFinanceiroController = require('../controllers/LancamentosFinanceiroController.js');
+const LancamentosFinanceiroController = require('../controllers/LancamentosFinanceiroController.js');
 
 const router = Router();
 
-router.get('/', (req, res)=>{
-    res.render('index', {title: 'Home Controle Financeiro'});
-});
+router.get('/', LancamentosFinanceiroController.raiz);
+
 
 module.exports = router;

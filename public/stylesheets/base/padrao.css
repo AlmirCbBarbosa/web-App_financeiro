@@ -2,7 +2,7 @@
 @import url(./_variaveis.css);
 
 .pagina {
-    background-color: var(--branco);
+    background-color: var(--AzulNeutro);   
     color: var(--branco);
     font-family: var(--fontePadrao);
     font-size: var(--fonteTamanhoNormal);

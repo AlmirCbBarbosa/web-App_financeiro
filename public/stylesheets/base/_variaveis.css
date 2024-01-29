@@ -2,9 +2,11 @@
     /*fonte e seus tamanhos*/
     --fontePadrao: 'Cormorant Garamond', serif;
     --fonteTamanhoNormal: 18px;
-    --fonteTamanhoDestqueCabecalho: 48px;
+    --fonteTamanhoTitulo: 22px;
+    --fonteTamanhoDestaqueCabecalho: 48px;
     
     /*cores do projeto*/
     --preto: #464646;
     --branco: #FFF;
+    --AzulNeutro: #6495ED;
 }

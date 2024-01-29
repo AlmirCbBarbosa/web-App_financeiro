@@ -1,9 +1,52 @@
-cabecalho__tituloGuia{
-    font-size: var(--fonteTamanhoDestqueCabecalho);
+.cabecalho{
+    background-color: var(--preto);
+    box-shadow: 5px 5px 5px #464646;
+}
+
+.cabecalho__tituloGuia{
+    font-size: var(--fonteTamanhoDestaqueCabecalho);
     color: var(--branco);
 }
 
 .conteudoPrincipal{
-    background-color: blueviolet;
+    background-image: url('../images/background/fundoRaiz.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px #464646;
+    height: calc(100vh - 43px);
 }
 
+.menu{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+}
+
+.menu__item{
+    background-color: var(--preto);
+    border-radius: 12px;   
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    transition: background 0.5s;
+    font-weight: bolder;
+    width: 200px;    
+    
+}
+
+.menu__item:first-child{
+    margin-top: 12px;
+}
+
+.menu__item:hover{
+    background-color: #5d5c5c;
+}
+
+
+.menu__ancora{  
+    color: var(--branco);
+    font-size: var(--fonteTamanhoTitulo);
+    text-decoration: none;   
+}

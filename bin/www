@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+global.db = require('../db.js');
 
 /**
  * Module dependencies.

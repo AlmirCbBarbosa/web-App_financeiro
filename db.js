@@ -21,6 +21,6 @@ async function connect(){
     return global.connection;
 };
 
-connect();
+//connect();
 
-module.exports = {};
+module.exports = connect;

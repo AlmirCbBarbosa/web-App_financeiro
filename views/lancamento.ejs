@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lançamento</title>
+    <link rel="icon" type="image" href="#">
+
+    <link rel="stylesheet" href="/stylesheets/base/padrao.css">
+    <link rel="stylesheet" href="/stylesheets/lancamento.css">
+
+   
 </head>
 <body>
-    <p>Pagina de lançamentos financeiro</p>    
+    <header class="cabecalho container">
+        <div class="cabecalho__titulo">
+            <h1 class="cabecalho__tituloGuia">Lançamentos</h1>
+        </div>
+        <nav class="cabecalho__navegadores">
+            <ul class="cabecalho__listaNavegadores">
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/">Home</a></li>
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/lancamento">Lançamentos</a></li>
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/index.ejs">Relatório Mensal</a></li>
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/index.ejs">Acumulado do Ano</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="conteudoPrincipal container">
+        <table class="tabelaLancamentos">
+            <thead class="tabelaLacamentos__cabecalho">
+                <tr class="tabelaLancamento__linha">
+                    <th class="tabelaLancamento__celulaCabecalho">Id</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Data</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Descrição</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Classificação</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Tipo</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Valor</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Forma de Pagamento</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Número de Parcelas</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Observações</th>
+                    <th class="tabelaLancamento__celulaCabecalho">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tabelaLancamentos__celula">1000000</td>
+                    <td class="tabelaLancamentos__celula">18/02/1986</td>
+                    <td class="tabelaLancamentos__celula">PMMG</td>
+                    <td class="tabelaLancamentos__celula">entrada</td>
+                    <td class="tabelaLancamentos__celula">salario</td>
+                    <td class="tabelaLancamentos__celula">R$5500,00</td>
+                    <td class="tabelaLancamentos__celula">Forma de Pagamento</td>
+                    <td class="tabelaLancamentos__celula">1</td>
+                    <td class="tabelaLancamentos__celula">salário PMMG</td>
+                    <td class="tabelaLancamentos__celula">
+                        <a href="#">editar</a> 
+                        <a href="#">excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabelaLancamentos__celula">1000000</td>
+                    <td class="tabelaLancamentos__celula">19/02/1986</td>
+                    <td class="tabelaLancamentos__celula">Lanche Serviço</td>
+                    <td class="tabelaLancamentos__celula">saida</td>
+                    <td class="tabelaLancamentos__celula">despesas mensais</td>
+                    <td class="tabelaLancamentos__celula">R$25,00</td>
+                    <td class="tabelaLancamentos__celula">Cartão de débido Banco do Brasil Almir</td>
+                    <td class="tabelaLancamentos__celula">1</td>
+                    <td class="tabelaLancamentos__celula"></td>
+                    <td class="tabelaLancamentos__celula">
+                        <a href="#">editar</a> 
+                        <a href="#">excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>  
 </body>
 </html>

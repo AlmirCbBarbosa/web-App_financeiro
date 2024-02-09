@@ -42,36 +42,29 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="tabelaLancamentos__celula">1000000</td>
-                    <td class="tabelaLancamentos__celula">18/02/1986</td>
-                    <td class="tabelaLancamentos__celula">PMMG</td>
-                    <td class="tabelaLancamentos__celula">entrada</td>
-                    <td class="tabelaLancamentos__celula">salario</td>
-                    <td class="tabelaLancamentos__celula">R$5500,00</td>
-                    <td class="tabelaLancamentos__celula">Forma de Pagamento</td>
-                    <td class="tabelaLancamentos__celula">1</td>
-                    <td class="tabelaLancamentos__celula">salário PMMG</td>
-                    <td class="tabelaLancamentos__celula">
-                        <a href="#">editar</a> 
-                        <a href="#">excluir</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tabelaLancamentos__celula">1000000</td>
-                    <td class="tabelaLancamentos__celula">19/02/1986</td>
-                    <td class="tabelaLancamentos__celula">Lanche Serviço</td>
-                    <td class="tabelaLancamentos__celula">saida</td>
-                    <td class="tabelaLancamentos__celula">despesas mensais</td>
-                    <td class="tabelaLancamentos__celula">R$25,00</td>
-                    <td class="tabelaLancamentos__celula">Cartão de débido Banco do Brasil Almir</td>
-                    <td class="tabelaLancamentos__celula">1</td>
-                    <td class="tabelaLancamentos__celula"></td>
-                    <td class="tabelaLancamentos__celula">
-                        <a href="#">editar</a> 
-                        <a href="#">excluir</a>
-                    </td>
-                </tr>
+                <% if(!rows || rows.length == 0){ %>
+                    <tr>
+                        <td class="tabelaLancamentos__celula" colspan="10">Nenhum lançamento cadastrado</td>
+                    </tr>
+                <% } else { 
+                    rows.forEach(transacao => { %>
+                    <tr>
+                        <td class="tabelaLancamentos__celula"><%= transacao.id %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.dataEvento %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.descricao %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.classificacao %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.tipo %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.valor %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.formaDePagamento %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.numeroDeParcelas %></td>
+                        <td class="tabelaLancamentos__celula"><%= transacao.observacao %></td>
+                        <td class="tabelaLancamentos__celula">
+                            <a href="#">editar</a> 
+                            <a href="#">excluir</a>
+                        </td>
+                    </tr>
+                <% })} %>
+                
             </tbody>
         </table>
     </main>  

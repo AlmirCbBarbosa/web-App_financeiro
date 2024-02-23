@@ -25,6 +25,11 @@ class LancamentoFinanceiroController{
         
         res.render('lancamento', {rows});
     }
+
+    //post
+    static async cadastro(req, res){
+        res.render('cadastro');
+    }
 }
 
 module.exports = LancamentoFinanceiroController;

@@ -3,8 +3,11 @@ const LancamentosFinanceiroController = require('../controllers/LancamentosFinan
 
 const router = Router();
 
+router.get('/cadastro', LancamentosFinanceiroController.cadastro)
 router.get('/lancamento', LancamentosFinanceiroController.lancamento);
 router.get('/', LancamentosFinanceiroController.raiz);
+
+
 
 
 module.exports = router;

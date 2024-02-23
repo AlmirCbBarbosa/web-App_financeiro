@@ -1,0 +1,28 @@
+/*componentes*/
+@import url(./component/cabecalho.css); /*cabecalho*/
+
+.formulario{    
+    padding: var(--fonteTamanhoNormal) 0;
+}
+
+.formulario__campo{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    width: 420px;
+}
+
+.formulario__campo label{
+    font-weight: bolder;
+}
+
+.formulario__campo input, .formulario__campo select{
+    width:200px;
+}
+
+#formulario__btnRegistrar{
+    font-weight: bolder;
+    margin: 0 auto;
+    padding: 4px;
+}

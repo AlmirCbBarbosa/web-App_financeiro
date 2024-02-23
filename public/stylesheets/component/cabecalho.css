@@ -1,0 +1,44 @@
+.cabecalho{
+    background-color: var(--preto);    
+    box-shadow: 5px 5px 5px #464646;
+    padding: 0;
+}
+
+.cabecalho__titulo{
+    padding: 0 32px;
+}
+.cabecalho__tituloGuia{
+    font-size: var(--fonteTamanhoDestaqueCabecalho);
+    color: var(--branco);
+}
+
+.cabecalho__listaNavegadores{
+    background-color: var(--amarelo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 32px;
+
+    width: 100%;
+}
+
+.cabecalho__itemNavegador{
+    list-style-type: none;
+}
+
+.cabecalho__ancora{
+    color: var(--preto);
+    font-size: var(--fonteTamanhoTitulo);
+    text-decoration: none;
+    transition: color 0.5s ;
+}
+
+.cabecalho__ancora:hover{
+    color: var(--cinza);  
+}
+
+.conteudoPrincipal{
+    background-color: var(--cinza);
+    box-shadow: 5px 5px 5px #464646;
+    padding: 16px 32px;
+}

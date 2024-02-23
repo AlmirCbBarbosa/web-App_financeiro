@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" type="image" href="#">
+
+    <link rel="stylesheet" href="/stylesheets/base/padrao.css">
+    <link rel="stylesheet" href="/stylesheets/cadastro.css">
+
+    <!--Fontes importadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="pagina">
+    <header class="cabecalho container">
+        <div class="cabecalho__titulo">
+            <h1 class="cabecalho__tituloGuia">Cadastro</h1>
+        </div>
+        <nav class="cabecalho__navegadores">
+            <ul class="cabecalho__listaNavegadores">
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/">Home</a></li>
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/lancamento">Lançamentos</a></li>
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/index.ejs">Relatório Mensal</a></li>
+                <li class="cabecalho__itemNavegador"><a class="cabecalho__ancora" href="/index.ejs">Acumulado do Ano</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="conteudoPrincipal container">  
+        <form class="formulario" action="" method="POST">
+            <div class="formulario__campo">
+                <label for="formulario__iptData">Data:</label>
+                <input name="data" id="formulario__iptData" type="text" minlength="10" maxlength="10" placeholder="dd/mm/aaaa" required data-input>
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptDescricao">descricao:</label>
+                <input name="descricao" id="formulario__iptDescricao" type="text" minlength="3" maxlength="30" required data-input>
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptClassificacao">Classificação:</label>
+                <select name="classificacao" id="formulario__iptClassificacao" required data-input>
+                    
+                </select> 
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptTipo">Tipo:</label>
+                <select name="tipo" id="formulario__iptTipo" required data-input>
+                    <option value="salario">salário</option>
+                    <option value="ticket">ticket</option>
+                    <option value="debito_em_conta">Débito em conta</option>
+                    <option value="outros">outros</option>
+                </select> 
+            </div>
+            <div class="formulario__campo">
+                <label for="valor">Valor:</label>
+                <input name="valor" type="number" step="0.01" max="9999999999" required data-input>
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptFormaDePagamento">Forma de Pagamento:</label>
+                <select name="formaDePagamento" id="formulario__iptFormaDePagamento" required data-input>
+                    <option value="cartão Almir">Cartão Almir</option>
+                    <option value="sale">saláre</option>
+                </select>
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptNumeroDeParcelas">Numero de Parcelas:</label>
+                <input name="numeroDeParcelas" id="formulario__iptNumeroDeParcelas" type="number" min="1" max="120" step="1" value="1" data-input>
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptQuantidadeParcelasPagas">Quantidade de Parcelas Pagas:</label>
+                <input name="quantidadeParcelasPagas" id="formulario__iptQuantidadeParcelasPagas" type="number" min="1" max="120" step="1" value="0" required data-input >
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptQuitado">Quitado:</label>
+                <select name="quitado" id="formulario__iptQuitado" required data-input>
+                    <option value="true">Sim</option>
+                    <option value="false" selected>Não</option>
+                </select>
+            </div>
+            <div class="formulario__campo">
+                <label for="formulario__iptObservacao">Observação:</label>
+                <textarea name="observacao" id="formulario__iptObservacao" maxlength="120" cols="30" rows="4" data-input></textarea >
+            </div> 
+            <div class="formulario__campo">
+                <input type="submit" id="formulario__btnRegistrar" value="Registrar">
+            </div>            
+        </form>    
+    </main> 
+    <script src="/javascripts/cadastro.js"></script>   
+</body>
+</html>
